@@ -1,0 +1,138 @@
+ex00
+
+#include <stdio.h>
+int	main(void)
+{
+	int	a;
+	int	*ptr;
+
+	ptr = &a;
+	ft_ft(ptr);
+	printf("%d", a);
+}
+
+ex01
+
+#include <stdio.h>
+int	main(void)
+{
+	int	a;
+	int	*nbr8;
+	int	**nbr7;
+	int	***nbr6;
+	int	****nbr5;
+	int	*****nbr4;
+	int	******nbr3;
+	int	*******nbr2;
+	int	********nbr1;
+	int	*********nbr;
+	
+	a = 42;
+
+	nbr8 = &a;
+	nbr7 = &nbr8;
+	nbr6 = &nbr7;
+	nbr5 = &nbr6;
+	nbr4 = &nbr5;
+	nbr3 = &nbr4;
+	nbr2 = &nbr3;
+	nbr1 = &nbr2;
+	nbr = &nbr1;
+
+	ft_ultimate_ft(nbr);
+	printf("%d", a);
+	return(0);	
+}
+
+ex02
+
+#include <stdio.h>
+ int main()
+ {
+      int a;
+      int b;
+      int *ptra;
+      int *ptrb;
+  
+      a = 1;
+      b = 2;
+      ptra = &a;
+      ptrb = &b;
+  
+      ft_swap(ptra, ptrb);
+      printf("%d %d",a ,b);
+ }
+
+ex03
+
+#include <stdio.h>
+int	main(void)
+{
+	int	a;
+	int	b;
+	int	div;
+	int	mod;
+
+	a = 5;
+	b = 2;
+	ft_div_mod(a, b, &div, &mod);
+	printf("%d %d", div, mod);
+	return (0);
+}
+
+ex04
+
+#include <stdio.h>
+int	main()
+{
+	int	a;
+	int	b;
+
+	a = 15;
+	b = 8;
+
+	ft_ultimate_div_mod(&a, &b);
+	printf("%d %d", a, b);
+	return (0);
+}
+
+ex05
+
+#include <stdio.h>
+int	main()
+{
+	char	*c = "hello";
+
+	ft_putstr(c);
+	return(0);
+}
+
+ex06
+
+#include <stdio.h>
+
+int	main()
+{
+	char	*c = "maelys";
+
+	printf("%s : %d", c, ft_strlen(c));
+	return(0);
+}
+
+ex07
+
+#include <stdio.h>
+
+int 	main()
+{
+	int tab[5] = {0, 1, 2, 3, 4};
+	ft_rev_int_tab(tab, 5);
+	printf("%d", tab[0]);
+	printf("%d", tab[1]);
+	printf("%d", tab[2]);
+	printf("%d", tab[3]);
+	printf("%d", tab[4]);
+	
+	return(0);
+}
+
